@@ -29,6 +29,48 @@ public class MainActivity extends AppCompatActivity {
                 resultTextView.setText(result + "");
             }
         });
+        Button addButton2 = (Button) findViewById(R.id.button2) ;
+        addButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText);
+                EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
+                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
+
+                double num1 = Integer.parseInt((firstNumEditText.getText().toString()));
+                double num2 = Integer.parseInt((secondNumEditText.getText().toString()));
+                double result = num1 - num2;
+                resultTextView.setText(result + "");
+            }
+        });
+        Button addButton3 = (Button) findViewById(R.id.button3) ;
+        addButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText);
+                EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
+                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
+
+                double num1 = Integer.parseInt((firstNumEditText.getText().toString()));
+                double num2 = Integer.parseInt((secondNumEditText.getText().toString()));
+                double result = num1 * num2;
+                resultTextView.setText(result + "");
+            }
+        });
+        Button addButton4 = (Button) findViewById(R.id.button4) ;
+        addButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText);
+                EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
+                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
+
+                double num1 = Integer.parseInt((firstNumEditText.getText().toString()));
+                double num2 = Integer.parseInt((secondNumEditText.getText().toString()));
+                double result = num1 / num2;
+                resultTextView.setText(result + "");
+            }
+        });
 
     }
 }
